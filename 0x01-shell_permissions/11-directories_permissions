@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod dx---x--x- 
+su chmod dx---x--x- 
