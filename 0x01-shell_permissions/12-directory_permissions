@@ -1,2 +1,2 @@
 #!/bin/bash
-mkdir dir_holberton drwxr-x--x
+mkdir -m751 dir_holberton
