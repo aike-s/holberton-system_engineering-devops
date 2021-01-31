@@ -1,1 +1,1 @@
-# This is a repository to learn about shell
+This is a repository to learn about shell
