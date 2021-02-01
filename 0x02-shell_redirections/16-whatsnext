@@ -1,2 +1,2 @@
 #!/bin/bash
-grep root | cut -d -f ' ' ' ' ' ' | grep root /etc/passwd
+grep root -A 3 root /etc/passwd
