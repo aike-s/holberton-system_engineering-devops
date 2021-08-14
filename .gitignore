@@ -84,3 +84,5 @@ tags
 # Persistent undo
 [._]*.un~
 
+*main.py
+.gitignore
