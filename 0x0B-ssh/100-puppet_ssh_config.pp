@@ -5,7 +5,8 @@ file_line {'Conf to use private key':
     path => '/etc/ssh/ssh_config',
     line => 'IdentityFile ~/.ssh/holberton',
 }
+
 file_line {'Conf to authenticate using a password':
-    path => '/etc/ssh/ssh_config'
+    path => '/etc/ssh/ssh_config',
     line => 'PasswordAuthentication no',
 }
