@@ -4,5 +4,5 @@ sudo usermod -aG sudo $(whoami)
 apt-get -y update
 apt-get -y install nginx
 rm /var/www/html/*
-echo "Holberton School" >> /var/www/html/index.html
-service nginx restart
+echo "Holberton School" > /var/www/html/index.nginx-debian.html
+service nginx start
