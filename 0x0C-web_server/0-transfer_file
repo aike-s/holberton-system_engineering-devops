@@ -8,11 +8,11 @@ then
     path_to_file=$1
     ip=$2
     user=$3
-    scp -o StrictHostKeyChecking=no "path_to_file" "user@ip:~/"
+    scp -o StrictHostKeyChecking=no path_to_file user@ip:~/
 else
     path_to_file=$1
     ip=$2
     user=$3
     path_to_ssh_key=$4
-    scp -i "path_to_ssh_key" -o StrictHostKeyChecking=no "path_to_file" "user@ip:~/"
+    scp -i path_to_ssh_key -o StrictHostKeyChecking=no path_to_file" "user@ip:~/
 fi
