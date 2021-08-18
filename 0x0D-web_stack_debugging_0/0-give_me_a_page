@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Debugging: Apache couldn't retry the page
+# Error message: curl: (52) Empty reply from server
+service apache2 start
