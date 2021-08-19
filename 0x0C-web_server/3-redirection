@@ -1,2 +1,9 @@
 #!/usr/bin/env bash
-# 
+# Redirect page
+apt-get update -y
+apt-get upgrade -y
+apt-get install nginx -y
+old="server_name _;"
+new="\n\n\tlocation /redirect_me {\n\t\treturn 301 https://www.youtube.com/watch?v=8vPxDAMqGeI;\n\t}\n"
+sed -i "/$old/a\\$new" /etc/nginx/sites-available/default
+service nginx restart
