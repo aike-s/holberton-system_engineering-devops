@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Fixing port to listen at port 80
+sed -i 's/8080/80' /etc/nginx/sites-enabled/default
+pkill -9f nginx
