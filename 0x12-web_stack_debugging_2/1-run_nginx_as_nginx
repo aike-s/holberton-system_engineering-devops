@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Make it works
+pkill apache2
+sed -i "s/80/8080/g" /etc/nginx/sites-available/default
+chmod 777 /etc/nginx/nginx.conf
+sudo -u service nginx start
+chmod 000 /etc/nginx/nginx.conf
