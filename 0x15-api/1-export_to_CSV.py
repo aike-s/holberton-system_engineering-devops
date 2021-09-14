@@ -9,7 +9,7 @@ import sys
 
 if __name__ == "__main__":
     user_id = sys.argv[1]
-    csv_file = user_id + ".cvs"
+    csv_file = user_id + ".csv"
 
     open_file = open(csv_file, 'w+')
     csv_writer = csv.writer(open_file, quoting=csv.QUOTE_ALL)
