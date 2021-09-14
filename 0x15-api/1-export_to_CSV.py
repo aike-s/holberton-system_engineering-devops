@@ -2,9 +2,9 @@
 """
 Using a REST API return information about an employee
 """
-import sys
-import requests
 import csv
+import requests
+import sys
 
 
 if __name__ == "__main__":
