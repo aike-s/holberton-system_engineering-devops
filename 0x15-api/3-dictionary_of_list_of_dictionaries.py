@@ -2,10 +2,8 @@
 """
 Using a REST API return information about an employee
 """
-import csv
 import json
 import requests
-import sys
 
 
 if __name__ == "__main__":
@@ -49,9 +47,3 @@ if __name__ == "__main__":
 
     with open(json_file, 'w+') as open_file:
         json.dump(all_employee_tasks, open_file)
-
-    print("Employee {} is done with tasks({}/{}):".format(user_name,
-                                                          num_done_tasks,
-                                                          total_num_tasks))
-    for task in user_done_tasks:
-        print("\t {}".format(task))
